@@ -19,7 +19,7 @@ print(TICKET)
 print(TOKEN)
 
 CONV_ID = "219f033c-87a0-44ab-9602-7802b57cb701"
-MESSAGE = "hogehoge"
+MESSAGE = "The host is dead"
 
 r = requests.post(HOST + "/api/message/send/" + CONV_ID, cookies = {"token_id": TOKEN}, headers = {"Content-Type": "application/json"},
         data = json.dumps({"message": MESSAGE,"ticket": TICKET}))
