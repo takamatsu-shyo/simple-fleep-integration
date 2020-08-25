@@ -4,7 +4,7 @@
 - Script2. Post a message to the conversation
 
 # TODO
-- Add a sample shell script with "ping" monitoring
+- Better logic: Stop notification for a while
 
 # References
 - https://fleep.io/fleepapi/index.html
