@@ -25,7 +25,7 @@ print(TOKEN)
 
 now_dt = datetime.now(timezone.utc)
 import pickle
-pickle_file = "/tmp/last_run.pt"
+pickle_file = "/tmp/last_alert.pt"
 import os
 last_run_file = os.path.isfile(pickle_file)
 first_run = False
@@ -52,6 +52,6 @@ if  first_run or dt_gap.days > 0:
     
     pickle.dump(now_dt, open(pickle_file, "wb"))
 else:
-    print("Last run is in a day. Keep silent")
+    print("Last alert is in a day. Keep silent")
 
 
